@@ -1,7 +1,11 @@
+## load the data
 data<-read.csv("volcano.csv", header=TRUE)
 
+
+## set threshold
 data$threshold = as.factor(data$pvalue < 0.05)
 
+## Construct the plot object
 g <- ggplot(data=data, 
             aes(x=log2FoldChange, y =pvalue, 
             colour=threshold)) +
