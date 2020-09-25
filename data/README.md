@@ -1,2 +1,2 @@
-##A data matrix used for statistical analysis
-##List of figures
+## A data matrix used for statistical analysis
+## List of figures
