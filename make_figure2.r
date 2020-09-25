@@ -1,6 +1,8 @@
+## install packages
+install.packages("ggplot2")
+library(ggplot2) 
 ## load the data
 data<-read.csv("volcano.csv", header=TRUE)
-
 
 ## set threshold
 data$threshold = as.factor(data$pvalue < 0.05)
